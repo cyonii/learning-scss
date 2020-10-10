@@ -1,0 +1,14 @@
+@import 'config';
+
+button {
+  border: 1px solid $color-muted;
+  border-radius: $rounded-edgy;
+  padding: $padding-sm;
+  cursor: pointer;
+}
+
+button:hover,
+button:active,
+button:focus {
+  opacity: 0.8;
+}
