@@ -1,14 +1,37 @@
 @import 'config';
 
+.btn,
 button {
+  display: inline-block;
   border: 1px solid $color-muted;
   border-radius: $rounded-edgy;
   padding: $padding-sm;
   cursor: pointer;
+
+  &:hover {
+    transition: transform 0.3s;
+  }
 }
 
-button:hover,
+.btn:active,
+.btn:focus,
+.btn:hover,
 button:active,
-button:focus {
+button:focus,
+button:hover {
   opacity: 0.8;
+}
+
+.btn-primary {
+  @extend .btn;
+  background-color: $color-primary;
+  border-color: $color-primary;
+  color: $color-white;
+}
+
+.btn-secondary {
+  @extend .btn;
+  background-color: $color-secondary;
+  border-color: $color-secondary;
+  color: $color-white;
 }
