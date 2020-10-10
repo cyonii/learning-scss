@@ -102,6 +102,10 @@ header .navbar {
     grid-gap: 1rem;
     padding: 1rem 0;
     border-bottom: 1px solid $color-muted;
+    background-image: url("../images/ONZ74Q0.png");
+    background-repeat: no-repeat;
+    background-size: 10%;
+    background-position: 95% 100%;
     @media (max-width: 767.98px) {
       grid-template-columns: repeat(1, 1fr);
     }
