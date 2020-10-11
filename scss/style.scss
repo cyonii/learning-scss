@@ -25,7 +25,7 @@ body {
 header .navbar {
   background-color: $color-light;
   display: flex;
-  padding: $_sm $_md;
+  padding: $_2 $_3;
   justify-content: space-between;
   align-items: center;
 
@@ -36,7 +36,7 @@ header .navbar {
     text-align: center;
     color: $color-white;
     padding: $padding-sm;
-    margin-right: $_sm;
+    margin-right: $_2;
   }
 
   .collapse-navbar {
@@ -55,13 +55,13 @@ header .navbar {
   .bar {
     display: block;
     width: 40px;
-    height: $_xs;
-    border-radius: $_xs;
+    height: $_1;
+    border-radius: $_1;
     background-color: $color-dark;
   }
 
   .bar:not(:first-of-type):not(:last-of-type) {
-    margin: $_xs 0;
+    margin: $_1 0;
   }
 
   .nav-list {
@@ -78,22 +78,27 @@ header .navbar {
   }
 
   .nav-link {
-    font-weight: bold;
-    color: $color-muted;
+    font-size: 18px;
+    font-weight: 300;
+    font-family: sans-serif;
+    color: darken($color-muted, 20%);
 
     &:hover {
-      color: $color-secondary;
+      color: lighten($color-secondary, 0%);
     }
   }
 
   .nav-link.active {
     color: $color-dark;
+    text-decoration: underline;
+    text-decoration-color: $color-secondary;
+    text-decoration-thickness: 2px;
   }
 }
 
 .jumbotron {
   padding: 2rem 0;
-  // background-image: linear-gradient($color-secondary, $color-primary);
+
   &-content {
     max-width: 1200px;
     margin: auto;
@@ -101,13 +106,14 @@ header .navbar {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1rem;
     padding: 1rem 0;
-    border-bottom: 1px solid $color-muted;
-    background-image: url("../images/ONZ74Q0.png");
+    border-bottom: 3px solid darken($color-primary, 15%);
+    background-image: url("../images/ONZ74Q0.png"), linear-gradient($color-white 10%, lighten($color-primary, 50%) 50% 100%);
     background-repeat: no-repeat;
-    background-size: 10%;
-    background-position: 95% 100%;
+    background-size: 9%, cover;
+    background-position: 95% 100%, center;
     @media (max-width: 767.98px) {
       grid-template-columns: repeat(1, 1fr);
+      background-size: 20%, cover;
     }
   }
 
@@ -115,6 +121,9 @@ header .navbar {
     width: 100%;
     margin: auto;
     padding: 1rem;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
     @media (min-width: 576px) {
       width: 90%;
     }
@@ -133,13 +142,16 @@ header .navbar {
     text-decoration: underline;
     text-decoration-color: $color-secondary;
     text-decoration-thickness: 2px;
+    margin: 1rem 0;
   }
 
   &-text {
     font-size: 3rem;
     font-weight: bold;
-    // color: $color-white;
     margin-top: 0;
+    @media (max-width: 767.98px) {
+      line-height: 1;
+    }
   }
 
   &-price {
@@ -147,9 +159,22 @@ header .navbar {
     font-weight: lighter;
   }
 
-  &-link {
+  &-btn {
+    @extend .btn;
+    @include set-background(lighten($color-secondary, 100%));
     font-size: 1.2em;
     font-weight: bold;
+    border-color: $color-secondary;
+    border-radius: 10rem;
+    padding-left: $_5;
+    padding-right: $_5;
+    transition: all 0.3s;
+
+    &:hover {
+      background: $color-secondary;
+      color: $color-light;
+      opacity: 1;
+    }
   }
 
   &-more {
