@@ -196,7 +196,7 @@ header .navbar .nav-link.active {
   text-decoration: underline;
   text-decoration-color: #e02d2d;
   text-decoration-thickness: 2px;
-  margin: 1rem 0;
+  margin-bottom: 2rem;
 }
 .jumbotron-text {
   font-size: 3rem;
