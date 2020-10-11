@@ -1,0 +1,239 @@
+.btn, .jumbotron-btn, .btn-secondary, .btn-primary,
+button {
+  display: inline-block;
+  border: 1px solid #aaa;
+  border-radius: 2px;
+  padding: 0.25rem 0.5rem;
+  cursor: pointer;
+}
+.btn:hover, .jumbotron-btn:hover, .btn-secondary:hover, .btn-primary:hover,
+button:hover {
+  transition: transform 0.3s;
+}
+
+.btn:hover, .jumbotron-btn:hover, .btn-secondary:hover, .btn-primary:hover,
+button:hover {
+  opacity: 0.8;
+}
+
+.btn:active, .jumbotron-btn:active, .btn-secondary:active, .btn-primary:active,
+.btn:focus,
+.jumbotron-btn:focus,
+.btn-secondary:focus,
+.btn-primary:focus,
+button:active,
+button:focus {
+  opacity: 0.9;
+}
+
+.btn-primary {
+  background-color: #31789c;
+  background-color: #31789c;
+  color: #fff;
+}
+
+.btn-secondary {
+  border-color: #e02d2d;
+  background-color: #e02d2d;
+  color: #fff;
+}
+
+.container {
+  max-width: 1200;
+  margin: auto;
+  padding: 0 15px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+a:hover {
+  opacity: 0.9;
+}
+
+body {
+  background-color: #fff;
+  font-family: Helvetica, sans-serif;
+}
+
+header .navbar {
+  background-color: #f4f4f4;
+  display: flex;
+  padding: 0.5rem 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+header .navbar .navbar-brand {
+  background-color: #000;
+  border-radius: 2px;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #fff;
+  padding: 0.25rem 0.5rem;
+  margin-right: 0.5rem;
+}
+header .navbar .collapse-navbar {
+  display: flex;
+  align-items: center;
+}
+header .navbar .navbar-toggle {
+  box-sizing: content-box;
+  border: none;
+}
+@media (min-width: 768px) {
+  header .navbar .navbar-toggle {
+    display: none;
+  }
+}
+header .navbar .bar {
+  display: block;
+  width: 40px;
+  height: 0.25rem;
+  border-radius: 0.25rem;
+  background-color: #000;
+}
+header .navbar .bar:not(:first-of-type):not(:last-of-type) {
+  margin: 0.25rem 0;
+}
+header .navbar .nav-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+@media (max-width: 767.98px) {
+  header .navbar .nav-list {
+    display: none;
+  }
+}
+header .navbar .nav-item:not(:last-of-type) {
+  margin-right: 1rem;
+}
+header .navbar .nav-link {
+  font-size: 18px;
+  font-weight: 300;
+  font-family: sans-serif;
+  color: #777777;
+}
+header .navbar .nav-link:hover {
+  color: #e02d2d;
+}
+header .navbar .nav-link.active {
+  color: #000;
+  text-decoration: underline;
+  text-decoration-color: #e02d2d;
+  text-decoration-thickness: 2px;
+}
+
+.jumbotron {
+  padding: 2rem 0;
+}
+.jumbotron-content {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  padding: 1rem 0;
+  border-bottom: 3px solid #1f4b62;
+  background-image: url("../images/ONZ74Q0.png");
+  background-repeat: no-repeat;
+  background-size: 9%, cover;
+  background-position: 95% 100%, center;
+}
+@media (max-width: 767.98px) {
+  .jumbotron-content {
+    grid-template-columns: repeat(1, 1fr);
+    background-size: 20%, cover;
+  }
+}
+.jumbotron-img {
+  width: 100%;
+  margin: auto;
+  padding: 1rem;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+@media (min-width: 576px) {
+  .jumbotron-img {
+    width: 90%;
+  }
+}
+.jumbotron-body {
+  font-weight: lighter;
+  padding: 1em;
+}
+@media (min-width: 768px) {
+  .jumbotron-body {
+    width: 100%;
+  }
+}
+.jumbotron-title {
+  font-size: 1.5em;
+  text-decoration: underline;
+  text-decoration-color: #e02d2d;
+  text-decoration-thickness: 2px;
+  margin: 1rem 0;
+}
+.jumbotron-text {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-top: 0;
+}
+@media (max-width: 767.98px) {
+  .jumbotron-text {
+    line-height: 1;
+  }
+}
+.jumbotron-price {
+  font-size: 16px;
+  font-weight: lighter;
+}
+.jumbotron-btn {
+  background-color: white;
+  color: #000;
+  font-size: 1.2em;
+  font-weight: bold;
+  border-color: #e02d2d;
+  border-radius: 10rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  transition: all 0.3s;
+}
+.jumbotron-btn:hover {
+  background: #e02d2d;
+  color: #f4f4f4;
+  opacity: 1;
+}
+.jumbotron-more {
+  color: dodgerblue;
+}
+.jumbotron-more:hover {
+  text-decoration: underline;
+  transition: 0.3s;
+}
+
+/*# sourceMappingURL=style.css.map */
