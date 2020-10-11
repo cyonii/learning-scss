@@ -157,7 +157,6 @@ header .navbar .nav-link.active {
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 1rem;
   padding: 1rem 0;
-  border-bottom: 3px solid #1f4b62;
   background-image: url("../images/ONZ74Q0.png");
   background-repeat: no-repeat;
   background-size: 9%, cover;

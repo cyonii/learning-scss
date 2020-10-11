@@ -106,8 +106,6 @@ header .navbar {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1rem;
     padding: 1rem 0;
-    border-bottom: 3px solid darken($color-primary, 15%);
-    // background-image: url("../images/ONZ74Q0.png"), linear-gradient($color-white 10%, lighten($color-primary, 50%) 50% 100%);
     background-image: url("../images/ONZ74Q0.png");
     background-repeat: no-repeat;
     background-size: 9%, cover;
